@@ -136,7 +136,7 @@ def main():
                 py_files = []
                 for root, dirs, files in os.walk(path_input):
                     for file in files:
-                        if file.endswith('.py'):
+                        if file.endswith('.py') or file.endswith('.js') or file.endswith('.xml'):
                             file_path = os.path.join(root, file)
                             py_files.append(file_path)
                             st.write(f"Added file to py_files: {file_path}")
