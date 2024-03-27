@@ -1,7 +1,6 @@
 import streamlit as st
 import os
 import pickle
-import openai
 from dotenv import load_dotenv
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings, HuggingFaceInstructEmbeddings
